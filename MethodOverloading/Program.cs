@@ -31,7 +31,9 @@
         }
         static void Main(string[] args)
         {
-          Console.WriteLine(Add(1,1, true)); 
+          Console.WriteLine(Add(1,1));//Add overload Method
+          Console.WriteLine(Add(2.5m,2.3m));//Add overload decimal method
+          Console.WriteLine(Add(5,8, true));//Currency overload method
         }
     }
 }
