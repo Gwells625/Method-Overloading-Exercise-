@@ -1,4 +1,6 @@
-﻿namespace MethodOverloading
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace MethodOverloading
 {
     public class Program
     {
@@ -30,10 +32,16 @@
             }
         }
         static void Main(string[] args)
+
         {
-          Console.WriteLine(Add(1,1));//Add overload Method
-          Console.WriteLine(Add(2.5m,2.3m));//Add overload decimal method
-          Console.WriteLine(Add(5,8, true));//Currency overload method
+            
+            Console.WriteLine(Add(2,3,true));
+            Add(5, 6);
+            Add(4.5m, 6.5m);
+            Add(6, 8, true);
+
+
+
         }
     }
 }
